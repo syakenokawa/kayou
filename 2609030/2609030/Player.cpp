@@ -6,10 +6,8 @@ using namespace std;
 
 void Player::Input()
 {
-	void Player::Input();
-	{
-		hand = 0;
-	}
+	hand = 0;
+	
 }
 
 
