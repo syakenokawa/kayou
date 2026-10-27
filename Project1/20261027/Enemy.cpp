@@ -2,10 +2,14 @@
 #include<iostream>
 using namespace std;
 
+Enemy::E
+
 Enemy::Enemy(int hp)
 {
 	this->hp = hp;
 }
+
+
 
 Enemy::~Enemy() {}
 
@@ -13,7 +17,6 @@ void Enemy::ShowStatus() const
 {
 	cout << "Enemy HP: " << hp << endl;
 }
-
 
 
 

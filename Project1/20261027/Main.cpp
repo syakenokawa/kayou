@@ -4,33 +4,40 @@
 #include<cstdlib>
 #include<ctime>
 using namespace std;
-const int HP_MAX = 100;
+const int HP_MAX = 70;
 const int HP_MIN = 30;
 const int INDEX = 3;
+const int DAMAGE_MIN = 20;
+const int DAMAGE_MAX = 70;
 int main(void)
 {
 	srand((unsigned int)time(NULL));
-	vector<Enemy> enemies;
-	for (int i = 0; i < 3; i++)
+
+	vector<Enemy>enemies;
+	for (int i = 0; i < INDEX; i++)
 	{
-		int num = rand() % HP_MAX + HP_MIN;
-		enemies. push_back(Enemy(num));
+		int value = rand() % HP_MAX + HP_MIN;
+		enemies.push_back(Enemy(value));
 	}
-
-
-	enemies.push_back(Enemy(100));
-	enemies.push_back(Enemy(200));
-	enemies.push_back(Enemy(300));
-	enemies.push_back(Enemy(80));
-	enemies.push_back(Enemy(250));
-
-	//“o˜^‚µ‚½“à—e‚ðŒ©‚Ä‚Ü‚µ‚å‚¤
-	for (const Enemy& enemy : enemies)
+	for (const Enemy& ebemies)
 	{
-		enemy.ShowStatus();
+		enemy.ShowHp();
 	}
+	cout << "UŒ‚‚·‚é“G‚ð‘I‘ð‚µ‚Ä‚­‚¾‚³‚¢" << endl;
 
-	cout << "“G‚Ì”‚Í" << enemies.size() << endl;
+	int choise;
+	cin >> choise;
+	int damage = rand() % HP_MAX + HP_MIN;
+	cout << "—^‚¦‚½ƒ_ƒ[ƒW:" << damage << endl;
+	enemies[chooise - 1].Damage(damage);
+	cout<<"ƒ_ƒ[ƒWŒã‚ÌHP"<<endl:
+	   for (Enemy& enemy : enemies)
+	   {
+
+
+
+	   }
+
 
 	return 0;
 }
