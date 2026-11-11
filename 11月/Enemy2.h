@@ -1,16 +1,10 @@
 #pragma once
-class Enemy2
+
+class Enemy
 {
-private:
-	int HP;
-
-
-
 public:
+    int hp;
 
-	void ShowStatus()const;
-	void TakeDamage(int damage);
-	void 
-
+    void Initialize();
+    void TakeDamage(int damage);
 };
-
